@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    --clr-neon: hsl(317 100% 54%);
+}
+
+body {
+    background-image: url(https://mcdn.wallpapersafari.com/medium/29/78/ct6CNm.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 90vmin;
+    height: 92vmin;
+    background: linear-gradient(rgb(0, 0, 0 ), rgb(0, 0, 0 ));
+    box-shadow: 0 0 0.1vw 0.3vw #f7f7f7, 0 0 3vw 0.3vw #ffff00, inset 0 0 1vw 0.3vw #ffff00, inset 0 0 0.3vw 0.1vw #ffff00;
+    border-radius: 10px;
+    transform: translateX(82px);
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+#scoreBox {
+    position: absolute;
+    top: 42px;
+    right: 86px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: #2Cf304;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em currentColor;
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 95px;
+    right: 37px;
+    font-size: 30px;
+    color: #2Cf304;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em currentColor;
+}
+
+.head {
+    background: linear-gradient(rgb(0, 0, 0 ), rgb(0, 0, 0 ));
+    box-shadow: 0 0 0.1vw 0.3vw #f7f7f7, 0 0 3vw 0.3vw #FE009A , inset 0 0 1vw 0.3vw #FE009A, inset 0 0 0.3vw 0.1vw #FE009A;
+    border: 2px solid rgb(221, 43, 148);
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake {
+    box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 3vw 0.3vw #00FFFF, inset 0 0 1vw 0.3vw #00FFFF, inset 0 0 0.3vw 0.1vw #fff7f7;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 3vw 0.3vw #FF0C00 , inset 0 0 1vw 0.3vw #FF0C00, inset 0 0 0.3vw 0.1vw #fff7f7;
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+.ad {
+    float: left;
+    transform: translate(-453px, 5px);
+    position: absolute;
+    /* box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 3vw 0.3vw #7528d6, inset 0 0 1vw 0.3vw #7528d6, inset 0 0 0.3vw 0.1vw #fff7f7; */
+}
+
+.te {
+    box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 3vw 0.3vw #2Cf304, inset 0 0 1vw 0.3vw #2Cf304, inset 0 0 0.3vw 0.1vw #fff7f7;
+    transform: translate(0px, -51px);
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em currentColor;
+}
+
+.sm {
+    box-shadow: 0 0 0.1vw 0.3vw #fff7f7, 0 0 3vw 0.3vw #2Cf304, inset 0 0 1vw 0.3vw #2Cf304, inset 0 0 0.3vw 0.1vw #fff7f7;
+}
+
+.tee {
+    text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em currentColor;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(32px);
+    font-size: 20px;
+}
